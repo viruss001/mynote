@@ -42,7 +42,7 @@ def get(request):
     return Response(routes)
 @api_view(['GET',])
 def getNotes(request):
-    #it return all the note form database
+    #it return all the note form databas
     getnotes =Note.objects.all().order_by('-updated')
     get_notes_ser=NoteSer(getnotes,many =  True)
     return Response(get_notes_ser.data)
