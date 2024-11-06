@@ -127,6 +127,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 import os
 STATIC_URL = '/assets/'
+STATIC_ROOT = 'staticfiles'
+# STATIC_URL = '/static/'
 #VITE_APP_DIR = BASE_DIR / "src"
 STATICFILES_DIRS = [
     BASE_DIR / "fronted/dist/assets",
